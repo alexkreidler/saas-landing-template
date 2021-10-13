@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   chakra,
   HStack,
@@ -34,7 +34,7 @@ export default function Header(props) {
   const text = useColorModeValue("dark", "light");
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
   const bg = useColorModeValue("white", "gray.800");
-  const ref = React.useRef();
+  const ref = useRef<HTMLHeadingElement>();
   const [y, setY] = React.useState(0);
   const { height = 0 } = ref.current ? ref.current.getBoundingClientRect() : {};
 
@@ -211,7 +211,7 @@ export default function Header(props) {
   );
   return (
     <React.Fragment>
-      <chakra.header
+      <Heading
         ref={ref}
         shadow={y > height ? "base" : undefined}
         transition="box-shadow 0.2s"
@@ -223,7 +223,7 @@ export default function Header(props) {
         // overflowY="hidden"
         px={{ base: '4', md: '8' }}
       >
-        <chakra.div h="4.5rem" mx="auto" maxW="7xl">
+        <Box h="4.5rem" mx="auto" maxW="7xl">
           <Flex
             w="full"
             h="full"
@@ -318,8 +318,8 @@ export default function Header(props) {
             </Flex>
           </Flex>
           {MobileNavContent}
-        </chakra.div>
-      </chakra.header>
+        </Box>
+      </Heading>
     </React.Fragment>
   );
 }

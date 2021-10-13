@@ -6,13 +6,13 @@ import {
   useColorModeValue,
   Stack,
   Link,
-  Heading
+  Heading,
 } from "@chakra-ui/react";
 
 export default function Sj() {
   return (
     <Flex
-      bg={useColorModeValue("#F9FAFB")}
+      bg={"#F9FAFB"}
       p={50}
       w="full"
       alignItems="center"
@@ -60,7 +60,7 @@ export default function Sj() {
               fontWeight="bold"
               rounded="md"
               shadow="md"
-              color={useColorModeValue("white")}
+              color={"white"}
               bg={useColorModeValue("brand.600", "brand.500")}
               _hover={{
                 bg: useColorModeValue("brand.700", "brand.600"),
