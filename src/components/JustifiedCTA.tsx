@@ -6,6 +6,7 @@ import {
   useColorModeValue,
   Stack,
   Link,
+  Heading
 } from "@chakra-ui/react";
 
 export default function Sj() {
@@ -28,7 +29,7 @@ export default function Sj() {
           alignItems={{ lg: "center" }}
           justifyContent={{ lg: "space-between" }}
         >
-          <chakra.h2
+          <Heading
             fontSize={{ base: "3xl", sm: "4xl" }}
             fontWeight="extrabold"
             letterSpacing="tight"
@@ -42,7 +43,7 @@ export default function Sj() {
             >
               Start your free trial today.
             </chakra.span>
-          </chakra.h2>
+          </Heading>
           <Stack
             direction={{ base: "column", sm: "row" }}
             mt={{ base: 8, lg: 0 }}

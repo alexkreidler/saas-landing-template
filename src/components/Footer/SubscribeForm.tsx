@@ -30,7 +30,7 @@ export const SubscribeForm = (props: HTMLChakraProps<'form'>) => {
           />
           <Button
             type="submit"
-            colorScheme="blue"
+            colorScheme="brand"
             flexShrink={0}
             width={{ base: 'full', md: 'auto' }}
           >

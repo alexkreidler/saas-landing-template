@@ -8,6 +8,7 @@ import {
   Image,
   Text,
   Icon,
+  Heading,
 } from "@chakra-ui/react";
 
 const Hero = () => {
@@ -18,7 +19,7 @@ const Hero = () => {
         mx="auto"
         textAlign={{ base: "left", md: "center" }}
       >
-        <chakra.h1
+        <Heading
           mb={6}
           fontSize={{ base: "4xl", md: "6xl" }}
           fontWeight="bold"
@@ -32,13 +33,13 @@ const Hero = () => {
             display={{ base: "block", lg: "inline" }}
             w="full"
             bgClip="text"
-            bgGradient="linear(to-r, green.400,purple.500)"
+            bgGradient="linear(to-tr, brand.400,brand.700)"
             fontWeight="extrabold"
           >
             starter template
           </Text>{" "}
           for your next project.
-        </chakra.h1>
+        </Heading>
         <chakra.p
           px={{ base: 0, lg: 24 }}
           mb={6}

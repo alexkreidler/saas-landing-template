@@ -7,6 +7,7 @@ import {
   Flex,
   SimpleGrid,
   useColorModeValue,
+  Heading
 } from "@chakra-ui/react";
 
 export default function Asm() {
@@ -34,7 +35,7 @@ export default function Asm() {
           spacingX={{ base: 10, md: 24 }}
         >
           <Box>
-            <chakra.h2
+            <Heading
               mb={4}
               fontSize={{ base: "2xl", md: "4xl" }}
               fontWeight="extrabold"
@@ -46,7 +47,7 @@ export default function Asm() {
               // textShadow="2px 0 currentcolor"
             >
               Clear overview for efficient tracking
-            </chakra.h2>
+            </Heading>
             <chakra.p
               mb={5}
               textAlign={{ base: "center", sm: "left" }}
@@ -85,7 +86,7 @@ export default function Asm() {
           spacingX={{ base: 10, md: 24 }}
         >
           <Box order={{ base: null, md: 2 }}>
-            <chakra.h2
+            <Heading
               mb={4}
               fontSize={{ base: "2xl", md: "4xl" }}
               fontWeight="extrabold"
@@ -95,7 +96,7 @@ export default function Asm() {
               lineHeight={{ md: "shorter" }}
             >
               Decide how you integrate Payments
-            </chakra.h2>
+            </Heading>
             <chakra.p
               mb={5}
               textAlign={{ base: "center", sm: "left" }}

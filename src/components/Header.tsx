@@ -220,9 +220,10 @@ export default function Header(props) {
         // borderTop="6px solid"
         // borderTopColor="brand.400"
         w="full"
-        overflowY="hidden"
+        // overflowY="hidden"
+        px={{ base: '4', md: '8' }}
       >
-        <chakra.div h="4.5rem" mx="auto" maxW="1200px">
+        <chakra.div h="4.5rem" mx="auto" maxW="7xl">
           <Flex
             w="full"
             h="full"
@@ -233,8 +234,8 @@ export default function Header(props) {
             <Flex align="flex-start">
               <Link href="/">
                 <HStack>
-                  <Circle size="6" bg="blue.500"></Circle>
-                  <Heading size="md" textDecoration="unset">Company Name</Heading>
+                  {/* <Circle size="6" bg="brand.500"></Circle> */}
+                  <Heading size="md" letterSpacing="tight" textDecoration="unset">Company Name</Heading>
                 </HStack>
               </Link>
             </Flex>
